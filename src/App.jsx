@@ -1,14 +1,18 @@
 import "./App.css";
 import scottmainphoto from "../src/assets/images/scottmainphoto.jpg";
+import circuslivephoto from "../src/assets/images/circuslivephoto.jpg";
 
 function App() {
   return (
     <>
-      <h1>Scott Brown Music</h1>
+      <h1>Scott Brown</h1>
+      <h2>Guitarist</h2>
+      <h3>Acoustic Folk, Jazz, Blues and Roots music.</h3>
       <p>15/07/2024</p>
       <p>
-        Hi! I'm currently refurbishing this website, so please come back soon to
-        visit the new site! In the interim, feel free to stay in touch on my{" "}
+        Hi! I&apos;m currently refurbishing this website, so please come back
+        soon to visit the new site! In the interim, feel free to stay in touch
+        on my{" "}
         <a
           href="https://www.instagram.com/scottbrownguitar/"
           alt="Scott Brown on Instagram"
@@ -40,6 +44,11 @@ function App() {
             is recently relocated to Liverpool and is enjoying becoming familiar
             with the city’s thriving acoustic music scene.
           </p>
+          <img
+            src={circuslivephoto}
+            alt="performing live on stage with Cirkus Arena"
+            className="circuslivephoto"
+          ></img>
           <p>
             As a bassist, guitarist, vocalist, pianist, and trombonist, Scott’s
             versatility and enthusiasm has made him a key ingredient to a host
