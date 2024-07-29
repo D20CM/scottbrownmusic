@@ -1,11 +1,15 @@
 .sidebar {
-  height: 100lvh;
-  /* width: 30%; */
+  height: 100svh;
+  max-height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 1em;
+  padding: 0em;
   text-align: center;
+  background-color: var(--black);
+  position: sticky;
+  top: 0;
+  bottom: 0;
 }
 
 .menu {
@@ -22,6 +26,11 @@
 .sidebar li {
   list-style: none;
   text-transform: uppercase;
+  color: var(--white);
+}
+
+.sidebar li:hover {
+  color: var(--primary-highlight);
 }
 
 .socialButtons i {

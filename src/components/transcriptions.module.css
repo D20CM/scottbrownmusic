@@ -1,0 +1,21 @@
+.transcriptions {
+  background-color: var(--grey);
+  color: var(--black);
+}
+
+.sheetmusicpic {
+  width: 100%;
+  max-width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.transcriptionsContent {
+  padding: 2em;
+}
+
+.transcriptionsheet {
+  width: 80%;
+  margin: 0 auto 2em;
+  display: block;
+}

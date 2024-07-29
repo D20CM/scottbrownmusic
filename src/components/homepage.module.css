@@ -1,0 +1,59 @@
+.homepage {
+  height: 100svh;
+  max-height: 100svh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+
+.homepageCenter {
+  text-align: center;
+  background-color: var(--grey);
+  color: var(--black);
+
+  height: 100svh;
+  max-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+}
+
+.headerTitles {
+  padding: 0em;
+}
+
+.homepageCenter h1 {
+  font-size: 64px;
+  margin: 2em 0 0;
+}
+.homepageCenter h2 {
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0;
+}
+.homepageCenter h3 {
+  font-size: 32px;
+  font-weight: 200;
+}
+
+.sofaguitar {
+  max-width: 100%;
+  max-height: 35svh;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.homepagephoto {
+  height: 100%;
+  max-height: 100svh;
+  /* width: 400px; */
+  max-width: 100%;
+  /* margin: auto; */
+  object-fit: cover;
+  /* transform: translate(100px); */
+}

@@ -1,23 +1,37 @@
 import css from "./sidebar.module.css";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
     <div className={css.sidebar}>
       <nav className={css.menu}>
         <ul className={css.menuLinks}>
-          <li>Home</li>
-          <li>About</li>
-          <li>Media</li>
-          <li>Gallery</li>
-          <li>Transcriptions</li>
-          <li>Contact</li>
+          <Link to={"/home"}>
+            <li>Home</li>
+          </Link>
+          <Link to={"/about"}>
+            <li>About</li>
+          </Link>
+          <a>
+            <li>Media</li>
+          </a>
+          <a>
+            <li>Gallery</li>
+          </a>
+          <Link to={"/transcriptions"}>
+            <li>Transcriptions</li>
+          </Link>
+          <a>
+            {" "}
+            <li>Contact</li>
+          </a>
         </ul>
       </nav>
       <div className={css.socialButtons}>
         <a
           id="facebook-share"
-          href="https://www.facebook.com/Doublemaltacousticduo"
-          alt="Double Malt Duo on Facebook"
+          href="https://www.facebook.com/scottbrownmusic"
+          alt="Scott Brown on Facebook"
         >
           <i
             className="fab large-social fa-facebook-square"
@@ -28,8 +42,8 @@ function Sidebar() {
 
         <a
           id="insta"
-          href="https://www.instagram.com/doublemaltduo/"
-          alt="Double Malt Duo on Instagram"
+          href="https://www.instagram.com/scottbrownguitar/"
+          alt="Scott Brown on Instagram"
         >
           <i
             className="fab large-social fa-instagram-square"
@@ -39,8 +53,8 @@ function Sidebar() {
         </a>
         <a
           id="youtube"
-          href="https://www.youtube.com/@doublemalt"
-          alt="Double Malt Duo on YouTube"
+          href="https://www.youtube.com/@ScottBrown500"
+          alt="Scott Brown on YouTube"
         >
           <i
             className="fab large-social fa-youtube-square"
