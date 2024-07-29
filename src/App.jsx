@@ -1,10 +1,12 @@
-import "./App.css";
+import css from "./app.module.css";
 import scottmainphoto from "../src/assets/images/scottmainphoto.jpg";
 import circuslivephoto from "../src/assets/images/circuslivephoto.jpg";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <>
+    <div className={css.fullpagecontainer}>
+      <Sidebar />
       <h1>Scott Brown</h1>
       <h2>Guitarist</h2>
       <h3>Acoustic Folk, Jazz, Blues and Roots music.</h3>
@@ -21,9 +23,9 @@ function App() {
           Instagram.
         </a>
       </p>
-      <div className="main-area">
-        <img src={scottmainphoto} className="homepagephoto"></img>
-        <div className="about">
+      <div className={css.mainArea}>
+        <img src={scottmainphoto} className={css.homepagephoto}></img>
+        <div className={css.about}>
           <h2>About</h2>
           <p>
             Scott Brown is a Welsh musician who is currently based in Liverpool.
@@ -47,7 +49,7 @@ function App() {
           <img
             src={circuslivephoto}
             alt="performing live on stage with Cirkus Arena"
-            className="circuslivephoto"
+            className={css.circuslivephoto}
           ></img>
           <p>
             As a bassist, guitarist, vocalist, pianist, and trombonist, Scott’s
@@ -65,7 +67,7 @@ function App() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
