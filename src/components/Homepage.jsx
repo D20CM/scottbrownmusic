@@ -1,5 +1,5 @@
 import css from "./homepage.module.css";
-import sofaguitar from "../assets/images/leandro-mazzuquini-ZIbrlLp63PY-unsplash.jpg";
+// import sofaguitar from "../assets/images/leandro-mazzuquini-ZIbrlLp63PY-unsplash.jpg";
 import scottmainphoto from "../assets/images/scottmainphoto.jpg";
 
 function Homepage() {

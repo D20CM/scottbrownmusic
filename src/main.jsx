@@ -5,6 +5,7 @@ import ErrorPage from "../src/error-page.jsx";
 import Homepage from "./components/Homepage.jsx";
 import About from "../src/components/About.jsx";
 import Transcriptions from "./components/Transcriptions.jsx";
+import Media from "./components/Media.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/root.jsx";
 
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/transcriptions",
         element: <Transcriptions />,
+      },
+      {
+        path: "/media",
+        element: <Media />,
       },
     ],
   },

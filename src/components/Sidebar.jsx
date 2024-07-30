@@ -12,9 +12,9 @@ function Sidebar() {
           <Link to={"/about"}>
             <li>About</li>
           </Link>
-          <a>
+          <Link to={"/media"}>
             <li>Media</li>
-          </a>
+          </Link>
           <a>
             <li>Gallery</li>
           </a>
@@ -34,7 +34,7 @@ function Sidebar() {
           alt="Scott Brown on Facebook"
         >
           <i
-            className="fab large-social fa-facebook-square"
+            className="fab large-social fa-facebook"
             data-toggle="tooltip"
             title="Facebook"
           ></i>
@@ -46,7 +46,7 @@ function Sidebar() {
           alt="Scott Brown on Instagram"
         >
           <i
-            className="fab large-social fa-instagram-square"
+            className="fab large-social fa-instagram"
             data-toggle="tooltip"
             title="Instagram"
           ></i>
@@ -57,7 +57,7 @@ function Sidebar() {
           alt="Scott Brown on YouTube"
         >
           <i
-            className="fab large-social fa-youtube-square"
+            className="fab large-social fa-youtube"
             data-toggle="tooltip"
             title="Youtube"
           ></i>
