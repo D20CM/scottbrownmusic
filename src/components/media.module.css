@@ -37,6 +37,8 @@
   padding-top: 0;
 }
 
-.musicplayerimage {
+.musicplayercoverimage {
   width: 100%;
+  height: 200px;
+  margin-top: 1em;
 }
