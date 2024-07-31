@@ -1,5 +1,9 @@
 import css from "./media.module.css";
-import musicplayerplaceholder from "../assets/images/DSC_0003-01.jpeg";
+// import musicplayerplaceholder from "../assets/images/DSC_0003-01.jpeg";
+import Audioplayer from "./Audioplayer";
+import AustralianTuneMP3 from "../assets/audio/Australian Tune 2024.mp3";
+import RosieOfTheCrossMP3 from "../assets/audio/Rosie Of The Cross 2024.mp3";
+// import WaveSurfer from "wavesurfer.js/dist/types.js";
 
 function Media() {
   return (
@@ -42,16 +46,11 @@ function Media() {
         </div>
         <div className={css.musicplayer}>
           <h3> Music Player </h3>
-          <p>Music player coming soon</p>
-          <img
-            src={musicplayerplaceholder}
-            className={css.musicplayerimage}
-          ></img>
-          <ol>
-            <li>Track 1</li>
-            <li>Track 2</li>
-            <li>Track 3</li>
-          </ol>
+          <p>Australian Tune (original)</p>
+          <Audioplayer audio={AustralianTuneMP3} />
+          <p>Rosie Of The Cross (original)</p>
+          <Audioplayer audio={RosieOfTheCrossMP3} />
+
           <hr></hr>
         </div>
       </div>
