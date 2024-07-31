@@ -1,6 +1,6 @@
 import css from "./media.module.css";
 // import musicplayerplaceholder from "../assets/images/DSC_0003-01.jpeg";
-import Audioplayer from "./Audioplayer";
+import Audioplayer from "../components/Audioplayer";
 import AustralianTuneMP3 from "../assets/audio/Australian Tune 2024.mp3";
 import RosieOfTheCrossMP3 from "../assets/audio/Rosie Of The Cross 2024.mp3";
 // import WaveSurfer from "wavesurfer.js/dist/types.js";
