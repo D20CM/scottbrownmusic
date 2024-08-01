@@ -1,9 +1,9 @@
 import css from "./homepage.module.css";
 import scottmainphoto from "../assets/images/scottmainphoto.jpg";
-import About from "./About";
-import Media from "./Media";
-import Transcriptions from "./Transcriptions";
-import Contact from "./Contact";
+// import About from "./About";
+// import Media from "./Media";
+// import Transcriptions from "./Transcriptions";
+// import Contact from "./Contact";
 import SocialButtons from "./SocialButtons";
 
 function Homepage() {
