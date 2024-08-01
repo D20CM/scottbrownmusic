@@ -1,31 +1,19 @@
-import css from "./sidebar.module.css";
-import { Link } from "react-router-dom";
+import css from "./contact.module.css";
 
-function Sidebar() {
+function Contact() {
   return (
-    <div className={css.sidebar}>
-      <nav className={css.menu}>
-        <ul className={css.menuLinks}>
-          <Link to={"/home"}>
-            <li>Home</li>
-          </Link>
-          <Link to={"/about"}>
-            <li>About</li>
-          </Link>
-          <Link to={"/media"}>
-            <li>Media</li>
-          </Link>
-          <a>
-            <li>Gallery</li>
-          </a>
-          <Link to={"/transcriptions"}>
-            <li>Transcriptions</li>
-          </Link>
-          <Link to={"/contact"}>
-            <li>Contact</li>
-          </Link>
-        </ul>
-      </nav>
+    <section className={css.contact}>
+      <h2>Contact</h2>
+      <p>You can drop me an email at;</p>
+      <a href="mailto:scott@scottbrownmusic">scott@scottbrownmusic.com</a>
+      <p>
+        You can also give me a ring or WhatsApp <em>07974 201346</em> to discuss
+        lessons, bookings, gigs etc.
+      </p>
+      <p>
+        Alternatively, you can also message me on social media at the accounts
+        below;
+      </p>
       <div className={css.socialButtons}>
         <a
           id="facebook-share"
@@ -62,8 +50,14 @@ function Sidebar() {
           ></i>
         </a>
       </div>
-    </div>
+      <p>
+        Please feel free to like and follow, it’s the easiest way to stay up to
+        date! Also check out{" "}
+        <a href="https://www.doublemaltduo.com">Double Malt Duo</a>, as that’s
+        where a lot of my energy goes at the moment. Cheers, Scott
+      </p>
+    </section>
   );
 }
 
-export default Sidebar;
+export default Contact;

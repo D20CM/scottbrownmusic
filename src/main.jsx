@@ -6,6 +6,7 @@ import Homepage from "./components/Homepage.jsx";
 import About from "../src/components/About.jsx";
 import Transcriptions from "./components/Transcriptions.jsx";
 import Media from "./components/Media.jsx";
+import Contact from "./components/Contact.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/root.jsx";
 
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/media",
         element: <Media />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },
