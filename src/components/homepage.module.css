@@ -70,7 +70,7 @@
   }
   .homepageCenter h1 {
     font-size: 40px;
-    margin: 0;
+    margin: 1em 0 0;
   }
   .homepageCenter h2 {
     font-size: 32px;
@@ -80,7 +80,7 @@
   }
   .homepagephoto {
     height: auto;
-    margin: 0 auto;
+    margin: 1em auto;
     max-width: 90%;
     max-height: 600px;
     object-fit: cover;

@@ -19,3 +19,13 @@
   margin: 0 auto 2em;
   display: block;
 }
+
+@media screen and (max-width: 1100px) {
+  .transcriptionsContent {
+    padding: 1em;
+  }
+
+  .transcriptionsheet {
+    width: 100%;
+  }
+}

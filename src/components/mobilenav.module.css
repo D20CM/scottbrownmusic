@@ -17,8 +17,13 @@
 }
 
 .mobilenavcontainer button {
-  color: var(--grey);
+  background-color: var(--grey);
+  color: var(--primary-highlight);
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
+  font-size: 3em;
+  padding: 0em 0em;
+  display: flex;
+  justify-content: center;
 }
