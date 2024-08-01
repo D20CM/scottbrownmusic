@@ -50,11 +50,6 @@ body {
   margin: 0;
 }
 
-.maincontainer {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-}
-
 h1,
 h2,
 h3 {
@@ -83,4 +78,15 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.maincontainer {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+@media screen and (max-width: 1100px) {
+  .maincontainer {
+    grid-template-columns: 1fr;
+  }
 }

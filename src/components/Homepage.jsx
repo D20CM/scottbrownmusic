@@ -9,9 +9,6 @@ function Homepage() {
         <div className={css.headerTitles}>
           <h1>SCOTT BROWN</h1>
           <h2>GUITARIST</h2>
-          <br></br>
-          <br></br>
-          <br></br>
           <h3>Acoustic Folk, Jazz, Blues and Roots music.</h3>
         </div>
         {/* <img src={sofaguitar} className={css.sofaguitar}></img> */}

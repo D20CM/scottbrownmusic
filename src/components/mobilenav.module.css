@@ -1,0 +1,24 @@
+.mobilenavcontainer {
+}
+
+.mobilenav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100svh;
+}
+
+.mobilenavlinks {
+  padding: 2em;
+}
+
+.mobilenavlinks li {
+  margin: 2em;
+}
+
+.mobilenavcontainer button {
+  color: var(--grey);
+  position: fixed;
+  top: 0;
+  right: 0;
+}
