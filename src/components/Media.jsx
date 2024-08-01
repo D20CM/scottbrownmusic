@@ -53,8 +53,6 @@ function Media() {
           <Audioplayer audio={AustralianTuneMP3} />
           <p>Rosie Of The Cross (original)</p>
           <Audioplayer audio={RosieOfTheCrossMP3} />
-
-          <hr></hr>
         </div>
       </div>
     </section>

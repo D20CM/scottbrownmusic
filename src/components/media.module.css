@@ -42,3 +42,23 @@
   height: 200px;
   margin-top: 1em;
 }
+
+@media screen and (max-width: 1100px) {
+  .mediacontainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .musicplayercoverimage {
+    height: 160px;
+    margin-top: 1em;
+  }
+
+  .musicplayer {
+    border-left: 0;
+  }
+
+  .videogallery {
+    padding-right: 0em;
+  }
+}
