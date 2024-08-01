@@ -19,10 +19,10 @@ function Homepage() {
         </div>
         <img src={scottmainphoto} className={css.homepagephoto}></img>
       </section>
-      <About />
+      {/* <About /> */}
       {/* <Media /> */}
-      <Transcriptions />
-      <Contact />
+      {/* <Transcriptions /> */}
+      {/* <Contact /> */}
     </>
   );
 }

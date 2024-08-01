@@ -59,8 +59,8 @@
   .homepage {
     grid-template-columns: 1fr;
     background-color: var(--grey);
-    height: auto;
-    padding: 1em;
+    /* height: auto; */
+    padding: 0 1em;
   }
   .homepageCenter {
     display: block;
