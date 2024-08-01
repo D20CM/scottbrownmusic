@@ -1,0 +1,29 @@
+.mobilenavcontainer {
+}
+
+.mobilenav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100svh;
+}
+
+.mobilenavlinks {
+  padding: 2em;
+}
+
+.mobilenavlinks li {
+  margin: 2em;
+}
+
+.mobilenavcontainer button {
+  background-color: var(--grey);
+  color: var(--primary-highlight);
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 3em;
+  padding: 0em 0em;
+  display: flex;
+  justify-content: center;
+}

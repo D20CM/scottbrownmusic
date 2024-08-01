@@ -1,0 +1,57 @@
+.sidebar {
+  height: 100svh;
+  max-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0em;
+  text-align: center;
+  background-color: var(--black);
+  position: sticky;
+  top: 0;
+  bottom: 0;
+}
+
+.menu {
+  height: 50%;
+}
+
+.menuLinks {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 0;
+}
+.sidebar li {
+  list-style: none;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.sidebar li:hover {
+  color: var(--primary-highlight);
+}
+
+.socialButtons {
+}
+
+.socialButtons i {
+  color: var(--black);
+  background-color: var(--primary-highlight);
+  font-size: 2em;
+  margin-right: 0.5em;
+  transition: all 0.5s ease;
+  border-radius: 50%;
+  height: 1.3em;
+  width: 1.3em;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.socialButtons i:hover {
+  /* color: var(--primary-highlight); */
+  background-color: var(--secondary-highlight);
+  scale: 1.07;
+}
