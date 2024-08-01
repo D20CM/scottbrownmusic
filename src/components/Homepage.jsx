@@ -4,6 +4,7 @@ import About from "./About";
 import Media from "./Media";
 import Transcriptions from "./Transcriptions";
 import Contact from "./Contact";
+import SocialButtons from "./SocialButtons";
 
 function Homepage() {
   return (
@@ -18,6 +19,9 @@ function Homepage() {
           {/* <img src={sofaguitar} className={css.sofaguitar}></img> */}
         </div>
         <img src={scottmainphoto} className={css.homepagephoto}></img>
+        <div className={css.socialContainer}>
+          <SocialButtons />
+        </div>
       </section>
       {/* <About /> */}
       {/* <Media /> */}
