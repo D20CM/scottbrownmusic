@@ -13,9 +13,9 @@ function Navlinks(setIsMobileNavOpen) {
       <Link to={"/media"} onClick={() => setIsMobileNavOpen(false)}>
         <li>Media</li>
       </Link>
-      {/* <a>
+      <Link to={"/gallery"}>
         <li>Gallery</li>
-      </a> */}
+      </Link>
       <Link to={"/transcriptions"} onClick={() => setIsMobileNavOpen(false)}>
         <li>Transcriptions</li>
       </Link>
