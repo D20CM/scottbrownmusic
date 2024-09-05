@@ -3,7 +3,7 @@ async function getPhotoUrl({ id }) {
 
   //   const id = "18038076163827937";
 
-  const url = `https://graph.instagram.com/${id}?fields=media_url,permalink&access_token=${access_token}`;
+  const url = `https://graph.instagram.com/${id}?fields=media_type,media_url,permalink&access_token=${access_token}`;
 
   const response = await fetch(url);
   console.log("waiting for url");

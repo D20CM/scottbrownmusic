@@ -55,6 +55,7 @@ function Photos() {
         {photoUrls.map((item, index) => (
           <div key={index}>
             {/* <p>{JSON.stringify(item)}</p> */}
+
             <PhotoTile url={item.data.media_url} className={css.phototile} />
           </div>
         ))}
