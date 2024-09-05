@@ -11,7 +11,23 @@ function Media() {
       <div className={css.mediacontainer}>
         <div className={css.videogallery}>
           <iframe
+            src="https://www.youtube.com/embed/RNjT6dkDAj0?si=5QOlrvdvYhe2y2JK"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
             src="https://www.youtube.com/embed/OYg-YU_i3ik?si=C9pCsvt6FkX2IJou"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/MyFTcSUvRn8?si=ordcS6T4d-8WYdVr"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
