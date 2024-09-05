@@ -1,0 +1,11 @@
+.phototile img {
+  width: 100%;
+  height: 200px;
+
+  border: 2px solid var(--primary-highlight);
+  object-fit: cover;
+}
+
+.phototile {
+  /* max-width: 600px; */
+}

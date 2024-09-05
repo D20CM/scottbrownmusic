@@ -1,9 +1,13 @@
 import {
   useQuery,
+  useQueries,
   QueryClient,
   QueryClientProvider,
 } from "@tanstack/react-query";
-import getPhotos from "../../getPhotos";
+import getPhotoIds from "../../getPhotoIds";
+import PhotoTile from "./PhotoTile";
+import getPhotoUrl from "../getPhotoUrl";
+import css from "./gallery.module.css";
 
 const queryClient = new QueryClient();
 
@@ -16,25 +20,45 @@ function Gallery() {
 }
 
 function Photos() {
-  const { isPending, error, data, isFetching } = useQuery({
-    queryKey: ["photos"],
-    queryFn: () => getPhotos(),
+  const { data: photoIds } = useQuery({
+    queryKey: ["photoIds"],
+    queryFn: () => getPhotoIds(),
+    select: (photoIds) => photoIds.data.map((photo) => photo.id),
   });
 
-  if (isPending) return "Loading...";
+  photoIds && console.log(photoIds);
 
-  if (error) return "An error has occurred: " + error.message;
+  const photoUrls = useQueries({
+    queries: photoIds
+      ? photoIds.map((id) => {
+          return {
+            queryKey: ["photoURLs", id],
+            queryFn: () => getPhotoUrl((id = { id })),
+            enabled: !!photoIds,
+          };
+        })
+      : [],
+  });
 
-  console.log(Object.keys(data.data[0]));
+  if (photoUrls.some((query) => query.isLoading)) {
+    return <p>Loading photos...</p>;
+  }
+
+  if (photoUrls.some((query) => query.isError)) {
+    return <p>An error has occurred while fetching photos.</p>;
+  }
+
   return (
-    <div>
-      <h1>{data.data[0].id}</h1>
-
-      {data.data.map((item) => (
-        <p key={item.id}>{item.id}</p>
-      ))}
-
-      <div>{isFetching ? "Updating..." : ""}</div>
+    <div className={css.galleryContainer}>
+      <h2>Gallery</h2>
+      <div className={css.photogrid}>
+        {photoUrls.map((item, index) => (
+          <div key={index}>
+            {/* <p>{JSON.stringify(item)}</p> */}
+            <PhotoTile url={item.data.media_url} className={css.phototile} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
