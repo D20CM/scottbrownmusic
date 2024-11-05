@@ -27,7 +27,7 @@ function Gallery() {
     "126190728_304336624014457_6032953164176561974_n_18173977168059635.jpg",
   ];
 
-  const path = "../../public/instaphotos/";
+  const path = "../../src/assets/images/instaphotos/";
 
   return (
     <div className={css.galleryContainer}>
