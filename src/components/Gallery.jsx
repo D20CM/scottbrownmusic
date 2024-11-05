@@ -59,6 +59,7 @@ function Photos() {
             <PhotoTile url={item.data.media_url} className={css.phototile} />
           </div>
         ))}
+        <img src="https://www.instagram.com/p/Ch0qbQ7j-sE/"></img>
       </div>
     </div>
   );

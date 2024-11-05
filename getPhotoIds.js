@@ -4,7 +4,7 @@ async function getPhotoIds() {
 
   const url = `https://graph.instagram.com/${user_id}/media?access_token=${access_token}`;
 
-  // console.log(url);
+  console.log(url);
 
   const response = await fetch(url);
   // console.log(response);
