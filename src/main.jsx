@@ -7,6 +7,7 @@ import About from "../src/components/About.jsx";
 import Transcriptions from "./components/Transcriptions.jsx";
 import Media from "./components/Media.jsx";
 import Contact from "./components/Contact.jsx";
+import Gallery from "./components/Gallery.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/root.jsx";
 
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/gallery",
+        element: <Gallery />,
       },
       { path: "*", element: <Homepage /> },
     ],
