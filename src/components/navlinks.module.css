@@ -7,12 +7,38 @@
 }
 .menuLinks li {
   list-style: none;
-  text-transform: uppercase;
-  color: var(--white);
 }
 
-.menuLinks li:hover {
+.menuLinks a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.menuLinks a:after {
+  display: block;
+  content: "";
+  width: 0px;
+  margin: auto;
+  height: 2px;
+  position: relative;
+
+  background-color: var(--primary-highlight);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  opacity: 0.9;
+}
+
+.menuLinks a:hover {
   color: var(--primary-highlight);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  text-shadow: 1px 1px 1px rgba(17, 17, 17, 0.788);
+}
+
+.menuLinks a:hover:after {
+  width: 20%;
+  margin: auto;
+  box-shadow: 1px 1px 1px rgba(17, 17, 17, 0.788);
 }
 
 @media screen and (max-width: 1100px) {

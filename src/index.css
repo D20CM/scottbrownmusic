@@ -27,6 +27,36 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+::-webkit-scrollbar {
+  width: auto;
+  background-color: var(--black);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black);
+  border-radius: 100vw;
+  margin-block: 0.2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-highlight);
+  border-radius: 100vw;
+  border: 4px solid var(--black);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--grey);
+}
+
+@supports (
+  scrollbar-color: var(--portfolio-dark-gray) var(--primary-highlight)
+) {
+  * {
+    scrollbar-color: var(--primary-highlight) var(--black);
+    scrollbar-width: thin;
+  }
+}
+
 a {
   font-weight: 500;
   color: var(--primary-highlight);
