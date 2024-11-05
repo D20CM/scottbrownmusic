@@ -1,52 +1,27 @@
-import {
-  useQuery,
-  useQueries,
-  QueryClient,
-  QueryClientProvider,
-} from "@tanstack/react-query";
-import getPhotoIds from "../../getPhotoIds";
 import PhotoTile from "./PhotoTile";
-import getPhotoUrl from "../getPhotoUrl";
+
 import css from "./gallery.module.css";
 
-const queryClient = new QueryClient();
-
 function Gallery() {
-  return (
-    <QueryClientProvider client={queryClient}>
-      <Photos />
-    </QueryClientProvider>
-  );
-}
+  const photoUrls = [
+    "301764139_1979643438897167_7141968644634529731_n_17974574932725484.webp",
+    "352464924_575949274654689_234236461115183600_n_17980963748193399.webp",
+    "457405275_18459672103030178_8774386731234122143_n_18034881035174375.webp",
+    "464162957_1066837571330798_2028153425789983948_n_18145155919344469.webp",
+    "81655861_166124014680063_6530365461830625421_n_18087284170146577.jpg",
+    "80040820_457369565139434_1871156683632179495_n_17856082552670631.jpg",
+    "78934813_728108787676352_6447134012952752643_n_17876533150499170.jpg",
+    "73385842_168833591024500_2977857903058773616_n_17923334800357281.jpg",
+    "59793148_591125304715866_2893164460669607793_n_17886728881337946.jpg",
+    "22071208_119019432146750_673384574897618944_n_17894961046069416.jpg",
+    "20065771_1287407231385937_7504789496685133824_n_17883597445066908.jpg",
+    "11313734_1413724558956757_270372100_n_17841912895030178.jpg",
+    "119048673_679547312769722_5490769878487184445_n_18076081687222838.jpg",
+    "69011804_164914544560533_3066576434660442583_n_18016244317227929.jpg",
+    "52188254_1351027018368795_8049297340786634217_n_18013360321121071.jpg",
+  ];
 
-function Photos() {
-  const { data: photoIds } = useQuery({
-    queryKey: ["photoIds"],
-    queryFn: () => getPhotoIds(),
-    select: (photoIds) => photoIds.data.map((photo) => photo.id),
-  });
-
-  photoIds && console.log(photoIds);
-
-  const photoUrls = useQueries({
-    queries: photoIds
-      ? photoIds.map((id) => {
-          return {
-            queryKey: ["photoURLs", id],
-            queryFn: () => getPhotoUrl((id = { id })),
-            enabled: !!photoIds,
-          };
-        })
-      : [],
-  });
-
-  if (photoUrls.some((query) => query.isLoading)) {
-    return <p>Loading photos...</p>;
-  }
-
-  if (photoUrls.some((query) => query.isError)) {
-    return <p>An error has occurred while fetching photos.</p>;
-  }
+  const path = "../../public/instaphotos/";
 
   return (
     <div className={css.galleryContainer}>
@@ -54,12 +29,14 @@ function Photos() {
       <div className={css.photogrid}>
         {photoUrls.map((item, index) => (
           <div key={index}>
-            {/* <p>{JSON.stringify(item)}</p> */}
-
-            <PhotoTile url={item.data.media_url} className={css.phototile} />
+            <PhotoTile url={path + item} className={css.phototile} />
           </div>
         ))}
-        <img src="https://www.instagram.com/p/Ch0qbQ7j-sE/"></img>
+        {/* <img
+          src={
+            "public/instaphotos/52188254_1351027018368795_8049297340786634217_n_18013360321121071.jpg"
+          }
+        ></img> */}
       </div>
     </div>
   );
