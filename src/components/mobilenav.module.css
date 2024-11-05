@@ -17,7 +17,7 @@
 }
 
 .mobilenavcontainer button {
-  background-color: var(--grey);
+  background-color: transparent;
   color: var(--primary-highlight);
   position: fixed;
   top: 10px;
