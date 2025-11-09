@@ -35,6 +35,14 @@ function Media() {
             allowfullscreen
           ></iframe>
           <iframe
+            src="https://www.youtube.com/embed/bZXr1SOV3Hs?si=lOYglvyXusRMS-JX"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
             src="https://www.youtube.com/embed/vfgKlaxSw_U?si=0OhMn8V239Hdqn5l"
             title="YouTube video player"
             frameBorder="0"
