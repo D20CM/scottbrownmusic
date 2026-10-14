@@ -3,8 +3,9 @@ import sheetmusicpic from "../assets/images/dayne-topkin-cB10K2ugb-4-unsplash (2
 import AustralianTune1 from "../assets/transcriptions/Australian Tune_0001.png";
 import AustralianTune2 from "../assets/transcriptions/Australian Tune_0002.png";
 import AustralianTune3 from "../assets/transcriptions/Australian Tune_0003.png";
-import NoTimeLikeThePast1 from "../assets/transcriptions/No Time Like The Past_0001.png";
-import NoTimeLikeThePast2 from "../assets/transcriptions/No Time Like The Past_0002.png";
+import NoTimeLikeThePast1 from "../assets/transcriptions/No Time Like The Past - 1.png";
+import NoTimeLikeThePast2 from "../assets/transcriptions/No Time Like The Past - 2.png";
+import NoTimeLikeThePast3 from "../assets/transcriptions/No Time Like The Past - 3.png";
 
 function Transcriptions() {
   return (
@@ -40,6 +41,7 @@ function Transcriptions() {
         </p>
         <img src={NoTimeLikeThePast1} className={css.transcriptionsheet}></img>
         <img src={NoTimeLikeThePast2} className={css.transcriptionsheet}></img>
+        <img src={NoTimeLikeThePast3} className={css.transcriptionsheet}></img>
       </div>
     </section>
   );
