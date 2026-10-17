@@ -4,7 +4,7 @@
 .socialButtons i {
   color: var(--black);
   background-color: var(--primary-highlight);
-  font-size: 2em;
+  font-size: 2.3em;
   margin-right: 0.5em;
   transition: all 0.5s ease;
   border-radius: 50%;

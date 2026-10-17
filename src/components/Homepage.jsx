@@ -12,8 +12,9 @@ function Homepage() {
       <section className={css.homepage}>
         <div className={css.homepageCenter}>
           <div className={css.headerTitles}>
-            <h1>Scott Brown</h1>
-            <h2>Guitarist</h2>
+            <h1>SCOTT BROWN</h1>
+            {/* <h1>Scott Brown</h1> */}
+            <h2>GUITARIST</h2>
             <h3>Acoustic Folk, Jazz, Blues and Roots music.</h3>
           </div>
           {/* <img src={sofaguitar} className={css.sofaguitar}></img> */}
