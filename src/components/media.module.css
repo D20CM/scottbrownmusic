@@ -46,7 +46,8 @@
 @media screen and (max-width: 1100px) {
   .mediacontainer {
     display: flex;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
+    flex-direction: column;
   }
 
   .musicplayercoverimage {
